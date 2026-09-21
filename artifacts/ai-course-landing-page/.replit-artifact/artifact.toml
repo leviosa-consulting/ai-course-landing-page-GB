@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AI at Work for Retail"
+description = "A Gentle Bamboo course landing page for retail teams, presenting AI learning experiences, curriculum, facilitators, testimonials, pricing, FAQs, and enrollment options."
+version = "1.0.0"
+id = "artifacts/ai-course-landing-page"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20083
+
+[services.development]
+run = "pnpm --filter @workspace/ai-course-landing-page run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ai-course-landing-page", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ai-course-landing-page/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20083"
+BASE_PATH = "/"
