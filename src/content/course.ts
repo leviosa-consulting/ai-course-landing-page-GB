@@ -97,8 +97,7 @@ export const course: Course = {
     primaryCta: "Discuss an AI at Work pilot",
     secondaryCta: "Explore the experiences",
     ctaNote: "", // optional line under the buttons
-    // TODO: add the Glass Box kit photograph to /public/images and set `src`
-    image: { src: "", alt: "The Glass Box learning kit" },
+    image: { src: "/images/glass-box.jpeg", alt: "The Glass Box learning kit: ten decks of cards, printed game sheets and a participant handout" },
     imageCaption: "The Glass Box learning kit: participants play through how language models work.",
     facts: [], // optional chips, e.g. { icon: "clock", label: "2–3 hours" }
     trustLine: "", // optional proof line
