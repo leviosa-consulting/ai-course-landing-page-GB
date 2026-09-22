@@ -17,9 +17,12 @@ export function FinalCta() {
         <WhatsAppButton location="final" size="lg" className="mt-9">
           {finalCta.cta}
         </WhatsAppButton>
-        <div className="mt-4 text-sm text-gb-plum">
-          <CohortStatus variant="inline" />
-        </div>
+        {/* Batch dates and seats only apply while a public cohort is on sale */}
+        {course.sections.pricing && (
+          <div className="mt-4 text-sm text-gb-plum">
+            <CohortStatus variant="inline" />
+          </div>
+        )}
         <p className="mt-4">
           <WhatsAppButton kind="callback" location="final_callback" variant="link" size="bare" className="text-sm">
             {whatsapp.callbackCta}

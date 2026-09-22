@@ -17,15 +17,23 @@ const lato = Lato({
   weight: ["400", "700"],
 });
 
+// On Vercel, use the deployment's own domain so share images and canonical links work
+// on preview links; fall back to the real site URL everywhere else.
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : course.meta.siteUrl;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(course.meta.siteUrl),
+  metadataBase: new URL(siteUrl),
   title: course.meta.title,
   description: course.meta.description,
   alternates: { canonical: "/" },
+  // The page is still a draft: keep it out of search results until review mode is switched off.
+  robots: course.review.mode ? { index: false, follow: false } : undefined,
   openGraph: {
     title: course.meta.title,
     description: course.meta.description,
-    siteName: "GentleBamboo",
+    siteName: "Gentle Bamboo Solutions",
     locale: "en_IN",
     type: "website",
   },

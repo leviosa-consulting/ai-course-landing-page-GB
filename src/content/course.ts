@@ -26,16 +26,16 @@ export const course: Course = {
     logos: true,
     audience: true,
     outcomes: true,
-    curriculum: true, // course
+    curriculum: false, // removed on request
     howItWorks: true,
     gallery: true,
     facilitators: true,
     testimonials: true,
-    certificate: true, // course
-    bonuses: true, // course
-    pricing: true, // course
+    certificate: false, // removed on request
+    bonuses: false, // removed on request
+    pricing: false, // removed on request
     pilot: true,
-    team: true,
+    team: false, // removed on request ("Training your leadership team?")
     faq: true,
     about: true,
     finalCta: true,
@@ -569,48 +569,42 @@ export const course: Course = {
     heading: "Questions, **answered**",
     items: [
       {
-        question: "Do I need a technical background?",
-        answer: "No. The course is built for leaders and managers, not engineers. If you can use email and a browser, you're ready.",
+        question: "How long does each experience take?",
+        answer:
+          "The AI Playground runs 2–3 hours. The AI @ Work Lab is a full day. Retail AI is a set of role-based simulations and the AI Leadership Lab is built around an executive team's schedule. We agree the exact shape with you while scoping.",
       },
       {
-        question: "What if I miss a live session?",
-        answer: "Every session is recorded, and you can catch up with a short 1:1 check-in with a facilitator.",
+        question: "Who should take part?",
+        answer:
+          "The people who own the work: merchandising, store operations, marketing, customer experience, supply chain and people teams. No technical background is needed — if you can use a browser, you can take part.",
       },
       {
-        question: "Which AI tools will we use?",
-        answer: "Mainstream tools such as ChatGPT, Claude, Gemini and Copilot. You'll learn skills that carry over as the tools change.",
+        question: "Do you run these on-site or online?",
+        answer: "[Both. Tell us which suits your team and we'll confirm during scoping.]",
       },
       {
-        question: "How much time do I need each week?",
-        answer: "About [4 hours]: two live sessions plus a short on-the-job challenge.",
+        question: "Which AI tools do participants use?",
+        answer:
+          "Whichever tools your organisation has already approved. We agree the tool list while scoping, so nobody is asked to use something your IT team hasn't cleared.",
       },
       {
-        question: "Is the course live or recorded?",
-        answer: "Live. Every session is run by a Gentle Bamboo facilitator in a small group, so you get to practise and get feedback. Recordings are shared afterwards.",
+        question: "How many people can join one session?",
+        answer: "[The Glass Box kit is built for 25–30 people. Larger groups run as multiple sessions.]",
       },
       {
-        question: "When do the live sessions happen?",
-        answer: "[Weekday evenings, 7:00–8:30 pm IST.] Exact dates are shared when you message us.",
+        question: "What do we walk away with?",
+        answer:
+          "It depends on the experience: prompting and verification habits from the AI Playground, redesigned workflows with a human checkpoint and a measure from the AI @ Work Lab, clearer delegate-or-keep-human choices from Retail AI, and an AI Opportunity Blueprint from the AI Leadership Lab.",
       },
       {
-        question: "Will I get a certificate?",
-        answer: "Yes, you'll receive a Gentle Bamboo certificate once you complete the course and your 90-day plan.",
+        question: "Do you handle the technical implementation?",
+        answer:
+          "No. We focus on how your people work with AI. Technical feasibility, platform decisions and approvals stay with your own teams and partners.",
       },
       {
-        question: "Can my company pay for the course?",
-        answer: "Yes. We provide a GST invoice in your company's name. Message us on WhatsApp and we'll set it up.",
-      },
-      {
-        question: "Do you offer group or team pricing?",
-        answer: "[Yes, for 3 or more participants from the same organisation.] We also run private cohorts for teams. Tap “Enquire for your team” to get details.",
-      },
-      {
-        question: "Can I talk to someone before enrolling?",
-        answer: "Of course. Tap “Request a callback” and we'll call you at a time that suits you.",
-      },
-      {
-        question: "What is the refund policy?",
-        answer: "[Describe your refund policy here.]",
+        question: "How do we start, and what does it cost?",
+        answer:
+          "Start with a call about your team and the business problem worth working on. Cost depends on the experience, group size and format, and we share commercial terms while scoping. Tap “Request a callback” and we'll call you at a time that suits you.",
       },
     ],
     stillQuestions: "Still have a question?",
