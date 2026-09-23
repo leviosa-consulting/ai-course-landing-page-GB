@@ -1,0 +1,112 @@
+1. Navigation
+Keep it short:
+Logo | Why This Matters | Experiences | How We Work | About Us | Let’s Talk
+Remove “Get started”, “Reviews” and “FAQ” from the main navigation unless those sections are particularly strong.
+________________________________________
+2. Hero section
+Eyebrow
+HUMAN CAPABILITY FOR AN AI-FIRST FUTURE
+Main headline
+AI is changing what your people can do.
+Is it changing how your business works?
+Supporting content:
+Gentle Bamboo Solutions helps organisations build the human capability needed for an AI-first future—turning individual experimentation into better workflows, decisions and business outcomes without outsourcing human judgement.
+Primary CTA
+Build Your Hum[AI]n Workforce
+Secondary CTA
+Explore the Four Experiences
+Use a real photograph of participants interacting with the Glassbox game or working around a table. 
+________________________________________
+3. The organisational gap
+Heading
+AI access does not automatically create AI-enabled work.
+Copy
+Across organisations, people are experimenting with AI. They are writing prompts, generating content and discovering new tools. But much of this activity remains individual, inconsistent and disconnected from how work actually gets done.
+The bigger opportunity is to help people:
+•	Understand what AI can and cannot do
+•	Apply it to meaningful business tasks
+•	Redesign workflows around AI and human judgement
+•	Rehearse decisions in realistic situations
+•	Identify where AI can create organisational value
+Closing statement
+That is how individual experimentation becomes organisational capability.
+________________________________________
+4. Introduce the bouquet
+Heading
+Building Human Capability for an AI-First Future
+Supporting copy
+Four experiential offerings that help organisations move from understanding AI to redesigning work, practising Human × AI decisions and prioritising business opportunities.
+Use a simple pathway above the four cards:
+UNDERSTAND → REDESIGN → REHEARSE → PRIORITISE
+Make each of the following four cards expandable, as originally planned.
+________________________________________
+________________________________________
+6. How the experiences build capability
+Heading
+People do not become AI-ready by watching more content.
+Copy
+They become ready by experimenting, making decisions, seeing consequences and reflecting on what should change at work.
+Use four short blocks:
+Experience
+Participants encounter AI through games, simulations and real work.
+Examine
+They question assumptions, outputs, risks and limitations.
+Redesign
+They rework tasks, workflows and decisions around Human × AI collaboration.
+Apply
+They leave with practical behaviours, redesigned work or organisational priorities.
+Closing line:
+Learn it. Test it. Question it. Put it to work.
+________________________________________
+7. Business outcomes
+Replace the current skills-oriented outcome section with:
+Heading
+What becomes possible
+More meaningful AI adoption
+AI becomes connected to business tasks rather than isolated experimentation.
+Better everyday workflows
+Teams identify where AI can reduce effort, accelerate cycles or improve quality.
+Stronger human judgement
+People learn when to use AI, when to challenge it and when not to use it.
+Clearer organisational priorities
+Leaders separate interesting AI ideas from opportunities capable of creating meaningful value.
+Safer experimentation
+Verification, accountability, confidentiality and escalation are designed into the way AI is used.
+________________________________________
+8. Who it is for
+Avoid persona cards such as “first-time managers” and “founders”. Use organisational conditions instead.
+Heading
+Is your organisation ready for the next step?
+These experiences are relevant if:
+•	Your people have access to AI, but usage is inconsistent
+•	Teams are experimenting without redesigning the underlying work
+•	Leaders see possibilities but are unsure where to focus
+•	You want productivity gains without weakening accountability
+•	You need people to practise AI decisions in realistic business situations
+•	You want a shared language for Human × AI collaboration
+________________________________________
+9. Proof and credibility
+Heading
+Designed by people who understand how adults learn and work changes.
+Copy
+Gentle Bamboo Solutions designs game-based learning experiences, business simulations and facilitated interventions for organisations. We create spaces where people can experiment safely, notice their assumptions and practise difficult decisions before making them at work.
+Include:
+•	Real client logos
+•	Two or three photographs from actual sessions
+•	A short Glassbox playtest video
+•	Three specific participant testimonials
+•	Facilitator profiles for Namitha, Abhilash and Rakshit
+•	Genuine organisational-learning numbers only
+Built on years of designing experiential learning and business simulations. Now applied to the decisions and behaviours an AI-first workplace demands.
+________________________________________
+10. Final CTA section
+Heading
+Where could AI make the biggest difference in your business?
+Copy
+Tell us where work is getting stuck, where your people are already experimenting and what your organisation needs to achieve. We will help you identify the most useful place to begin.
+Primary CTA
+Explore Your Path to AI Readiness
+Secondary CTA
+Talk to Gentle Bamboo
+Underneath:
+Start with one team, one function or one business challenge.
