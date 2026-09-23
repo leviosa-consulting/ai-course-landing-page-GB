@@ -29,3 +29,11 @@ channel = "stable-25_05"
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[[ports]]
+localPort = 8080
+externalPort = 8080
+
+[[ports]]
+localPort = 20083
+externalPort = 3000
