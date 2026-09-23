@@ -74,8 +74,9 @@ export function Hero() {
         </div>
 
         <figure className="lg:justify-self-end">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-white shadow-2xl ring-4 shadow-gb-plum/20 ring-white">
-            <Photo image={hero.image} sizes="(min-width: 1024px) 560px, 100vw" preload />
+          {/* 4:5 matches the Glass Box kit photograph, so nothing is cropped away */}
+          <div className="relative mx-auto aspect-[4/5] max-w-md overflow-hidden rounded-[28px] bg-white shadow-2xl ring-4 shadow-gb-plum/20 ring-white lg:mx-0">
+            <Photo image={hero.image} sizes="(min-width: 1024px) 448px, (min-width: 640px) 448px, 100vw" preload />
           </div>
           {hero.imageCaption && <figcaption className="mt-3 max-w-md text-sm text-gb-plum/80">{hero.imageCaption}</figcaption>}
         </figure>

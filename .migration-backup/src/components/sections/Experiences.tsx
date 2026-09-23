@@ -11,7 +11,11 @@ export function Experiences() {
       <Container>
         <SectionHeading id="experiences-heading" title={experiences.heading} subtitle={experiences.subheading} />
 
-        <ol className="mx-auto mt-12 max-w-4xl space-y-5">
+        {experiences.pathway.length > 0 && (
+          <FlowRow steps={experiences.pathway} size="lg" className="mt-10 justify-center" />
+        )}
+
+        <ol className="mx-auto mt-10 max-w-4xl space-y-5">
           {experiences.items.map((item, i) => (
             <li key={item.title} className="reveal">
               <details open={i === 0} className="group rounded-3xl bg-white ring-1 ring-gb-plum/10 open:shadow-xl open:shadow-gb-plum/10">
@@ -47,6 +51,27 @@ export function Experiences() {
         </ol>
       </Container>
     </section>
+  );
+}
+
+/** Steps separated by arrows, used for the pathway and for `flow` blocks. */
+export function FlowRow({ steps, className = "", size = "sm" }: { steps: string[]; className?: string; size?: "sm" | "lg" }) {
+  return (
+    <ol className={`flex flex-wrap items-center gap-2 ${className}`}>
+      {steps.map((step, i) => (
+        // The arrow trails its chip, so a wrapped line never starts with an arrow
+        <li key={step} className="flex items-center gap-2">
+          <span
+            className={`rounded-xl bg-gb-yellow-50 font-bold text-gb-plum ring-1 ring-gb-plum/10 ${
+              size === "lg" ? "px-4 py-2.5 text-sm tracking-wider uppercase sm:text-base" : "px-3 py-2 text-sm"
+            }`}
+          >
+            {step}
+          </span>
+          {i < steps.length - 1 && <Icon name="arrowRight" className={`${size === "lg" ? "size-5" : "size-4"} shrink-0 text-gb-mauve`} />}
+        </li>
+      ))}
+    </ol>
   );
 }
 
@@ -97,14 +122,7 @@ function Block({ block }: { block: ExperienceBlock }) {
       return (
         <div>
           {block.label && <BlockLabel>{block.label}</BlockLabel>}
-          <ol className="flex flex-wrap items-center gap-2">
-            {block.steps.map((step, i) => (
-              <li key={step} className="flex items-center gap-2">
-                {i > 0 && <Icon name="arrowRight" className="size-4 shrink-0 text-gb-mauve" />}
-                <span className="rounded-xl bg-gb-yellow-50 px-3 py-2 text-sm font-bold text-gb-plum ring-1 ring-gb-plum/10">{step}</span>
-              </li>
-            ))}
-          </ol>
+          <FlowRow steps={block.steps} />
         </div>
       );
 

@@ -28,6 +28,7 @@ export type Stat = {
 /** Sections you can switch off in one line (see `sections` in course.ts). */
 export type SectionKey =
   | "audienceStrip"
+  | "problem"
   | "experiences"
   | "video"
   | "logos"
@@ -118,9 +119,19 @@ export type Course = {
     heading: string;
     items: string[];
   };
+  /** The organisational gap: why AI access alone doesn't change how work gets done. */
+  problem: {
+    heading: string;
+    text: string;
+    listIntro: string;
+    points: string[];
+    closing: string;
+  };
   experiences: {
     heading: string;
     subheading: string;
+    /** The pathway shown above the cards, e.g. Understand → Redesign → Rehearse → Prioritise. */
+    pathway: string[];
     /** Label above each experience's headline outcome, e.g. "Outcome". */
     outcomeLabel: string;
     expandLabel: string;
@@ -146,12 +157,11 @@ export type Course = {
     heading: string;
     items: { name: string; src: string }[];
   };
+  /** Organisational conditions rather than job-title personas. */
   audience: {
     heading: string;
-    subheading: string;
-    personas: { icon: IconName; title: string; description: string; outcome: string }[];
-    notForYouTitle: string;
-    notForYou: string[];
+    intro: string;
+    conditions: string[];
   };
   outcomes: {
     heading: string;
@@ -171,7 +181,7 @@ export type Course = {
     heading: string;
     subheading: string;
     steps: TextItem[];
-    details: { label: string; value: string }[];
+    closing: string;
   };
   gallery: {
     heading: string;
@@ -240,7 +250,6 @@ export type Course = {
     eyebrow: string;
     heading: string;
     text: string;
-    cta: string;
     steps: TextItem[];
     note: string;
   };
@@ -248,6 +257,7 @@ export type Course = {
     eyebrow: string;
     heading: string;
     text: string;
+    closing: string;
   };
   team: {
     eyebrow: string;
@@ -266,6 +276,8 @@ export type Course = {
     heading: string;
     text: string;
     cta: string;
+    secondaryCta: string;
+    note: string;
   };
   footer: {
     /** e.g. "Gentle Bamboo Solutions | AI at Work for Retail" */

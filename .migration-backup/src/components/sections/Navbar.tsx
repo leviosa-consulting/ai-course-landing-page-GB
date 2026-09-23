@@ -4,17 +4,17 @@ import Image from "next/image";
 import { useState } from "react";
 import { course } from "@/content/course";
 import { Icon } from "../Icon";
-import { MailButton } from "../MailButton";
 import { WhatsAppButton } from "../WhatsAppButton";
 
-const { sections, email } = course;
+const { sections } = course;
 
 // Only links whose section is switched on
 const links = [
+  { href: "#why", label: "Why This Matters", show: sections.problem },
   { href: "#experiences", label: "Experiences", show: sections.experiences },
-  { href: "#get-started", label: "Get started", show: sections.pilot },
-  { href: "#reviews", label: "Reviews", show: sections.testimonials },
-  { href: "#faq", label: "FAQ", show: sections.faq },
+  { href: "#how-we-work", label: "How We Work", show: sections.howItWorks },
+  { href: "#about", label: "About Us", show: sections.about },
+  { href: "#lets-talk", label: "Let's Talk", show: sections.finalCta },
 ].filter((link) => link.show);
 
 /** Same look as the gentlebamboo.com navbar; links jump to sections on this page. */
@@ -34,9 +34,6 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <MailButton subject="general" location="navbar_email" variant="text" size="bare" className="text-[17px] font-normal">
-            {email.navCta}
-          </MailButton>
           <WhatsAppButton location="navbar" size="sm">
             Chat on WhatsApp
           </WhatsAppButton>
@@ -61,9 +58,6 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <MailButton subject="general" location="navbar_email_mobile" variant="text" size="bare" className="mt-4 block text-lg font-normal">
-            {email.navCta}
-          </MailButton>
           <WhatsAppButton location="navbar_mobile" className="mt-4 w-full">
             Chat on WhatsApp
           </WhatsAppButton>

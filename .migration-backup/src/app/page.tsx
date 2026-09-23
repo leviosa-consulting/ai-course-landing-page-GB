@@ -4,9 +4,6 @@ import { StickyCtas } from "@/components/StickyCtas";
 import { About } from "@/components/sections/About";
 import { Audience } from "@/components/sections/Audience";
 import { AudienceStrip } from "@/components/sections/AudienceStrip";
-import { Bonuses } from "@/components/sections/Bonuses";
-import { Certificate } from "@/components/sections/Certificate";
-import { Curriculum } from "@/components/sections/Curriculum";
 import { Experiences } from "@/components/sections/Experiences";
 import { Facilitators } from "@/components/sections/Facilitators";
 import { Faq } from "@/components/sections/Faq";
@@ -19,8 +16,7 @@ import { LogoStrip } from "@/components/sections/LogoStrip";
 import { Navbar } from "@/components/sections/Navbar";
 import { Outcomes } from "@/components/sections/Outcomes";
 import { PilotInvitation } from "@/components/sections/PilotInvitation";
-import { Pricing } from "@/components/sections/Pricing";
-import { TeamEnquiry } from "@/components/sections/TeamEnquiry";
+import { Problem } from "@/components/sections/Problem";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { VideoSection } from "@/components/sections/VideoSection";
 import { course } from "@/content/course";
@@ -41,56 +37,47 @@ export default function Home() {
         <Section name="audienceStrip">
           <AudienceStrip />
         </Section>
+        <Section name="problem">
+          <Problem />
+        </Section>
         <Section name="experiences">
           <Experiences />
-        </Section>
-        <Section name="video">
-          <VideoSection />
-        </Section>
-        <Section name="logos">
-          <LogoStrip />
-        </Section>
-        <Section name="audience">
-          <Audience />
-        </Section>
-        <Section name="outcomes">
-          <Outcomes />
-        </Section>
-        <Section name="curriculum">
-          <Curriculum />
         </Section>
         <Section name="howItWorks">
           <HowItWorks />
         </Section>
+        <Section name="outcomes">
+          <Outcomes />
+        </Section>
+        <Section name="audience">
+          <Audience />
+        </Section>
+
+        {/* Proof and credibility */}
+        <Section name="about">
+          <About />
+        </Section>
+        <Section name="logos">
+          <LogoStrip />
+        </Section>
         <Section name="gallery">
           <Gallery />
         </Section>
-        <Section name="facilitators">
-          <Facilitators />
+        <Section name="video">
+          <VideoSection />
         </Section>
         <Section name="testimonials">
           <Testimonials />
         </Section>
-        <Section name="certificate">
-          <Certificate />
+        <Section name="facilitators">
+          <Facilitators />
         </Section>
-        <Section name="bonuses">
-          <Bonuses />
-        </Section>
-        <Section name="pricing">
-          <Pricing />
-        </Section>
+
         <Section name="pilot">
           <PilotInvitation />
         </Section>
-        <Section name="team">
-          <TeamEnquiry />
-        </Section>
         <Section name="faq">
           <Faq />
-        </Section>
-        <Section name="about">
-          <About />
         </Section>
         <Section name="finalCta">
           <FinalCta />
@@ -140,8 +127,8 @@ function StructuredData() {
   const service = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "AI at Work for Retail",
-    serviceType: "Facilitated AI learning experiences for retail organisations",
+    name: "Building Human Capability for an AI-First Future",
+    serviceType: "Facilitated AI learning experiences, simulations and leadership sessions for organisations",
     provider: { "@type": "Organization", name: "Gentle Bamboo Solutions" },
     areaServed: "IN",
     hasOfferCatalog: {

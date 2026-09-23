@@ -1,15 +1,13 @@
 import { course } from "@/content/course";
 import { emphasis } from "@/lib/emphasis";
 import { Icon } from "../Icon";
-import { MailButton } from "../MailButton";
 import { Container } from "../ui";
-import { WhatsAppButton } from "../WhatsAppButton";
 
 export function PilotInvitation() {
-  const { pilot, whatsapp } = course;
+  const { pilot } = course;
 
   return (
-    <section id="get-started" aria-labelledby="pilot-heading" className="bg-gb-yellow py-16 sm:py-24">
+    <section id="get-started" aria-labelledby="pilot-heading" className="bg-gb-yellow-50 py-16 sm:py-24">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-bold tracking-wider text-gb-plum/70 uppercase">{pilot.eyebrow}</p>
@@ -17,23 +15,9 @@ export function PilotInvitation() {
             {emphasis(pilot.heading)}
           </h2>
           <p className="mt-5 text-lg text-pretty text-gb-plum/85">{pilot.text}</p>
-
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <WhatsAppButton location="pilot" size="lg">
-              {pilot.cta}
-            </WhatsAppButton>
-            <MailButton subject="pilot" location="pilot_email" variant="plum" size="lg">
-              {course.email.cta}
-            </MailButton>
-          </div>
-          <p className="mt-3 text-sm">
-            <WhatsAppButton kind="callback" location="pilot_callback" variant="link" size="bare" className="text-sm">
-              {whatsapp.callbackCta}
-            </WhatsAppButton>
-          </p>
         </div>
 
-        <ol className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {pilot.steps.map((step, i) => (
             <li key={step.title} className="reveal rounded-3xl bg-white/70 p-6 ring-1 ring-gb-plum/10">
               <span className="grid size-10 place-items-center rounded-full bg-gb-plum font-heading font-bold text-gb-yellow">{i + 1}</span>
