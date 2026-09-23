@@ -16,6 +16,9 @@ export function About() {
             {emphasis(about.heading)}
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-pretty text-gb-ink">{about.text}</p>
+          {about.closing && (
+            <p className="mt-6 max-w-2xl border-l-4 border-gb-green pl-5 text-lg leading-relaxed text-pretty text-gb-plum">{about.closing}</p>
+          )}
         </div>
       </Container>
     </section>

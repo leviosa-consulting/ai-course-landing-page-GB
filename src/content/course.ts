@@ -21,6 +21,7 @@ export const course: Course = {
    */
   sections: {
     audienceStrip: true,
+    problem: true,
     experiences: true,
     video: true,
     logos: true,
@@ -49,12 +50,6 @@ export const course: Course = {
   review: {
     mode: true,
     draftNotes: {
-      experiences: "subheading is draft copy",
-      audience: "persona cards are draft copy",
-      outcomes: "draft copy — confirm or replace",
-      curriculum: "modules are draft copy",
-      howItWorks: "steps are draft copy",
-      team: "draft copy — confirm or replace",
       faq: "questions are drafts",
     },
   },
@@ -91,11 +86,11 @@ export const course: Course = {
   },
 
   hero: {
-    eyebrow: "AI at Work for Retail",
-    headline: "AI is changing what people can do. **Is it changing how your business works?**",
-    lead: "We help retail organisations turn AI from individual experimentation into better everyday work — without outsourcing human judgement.",
-    primaryCta: "Discuss an AI at Work pilot",
-    secondaryCta: "Explore the experiences",
+    eyebrow: "Human capability for an AI-first future",
+    headline: "AI is changing what your people can do. **Is it changing how your business works?**",
+    lead: "Gentle Bamboo Solutions helps organisations build the human capability needed for an AI-first future — turning individual experimentation into better workflows, decisions and business outcomes without outsourcing human judgement.",
+    primaryCta: "Build Your Hum[AI]n Workforce",
+    secondaryCta: "Explore the Four Experiences",
     ctaNote: "", // optional line under the buttons
     image: { src: "/images/glass-box.jpeg", alt: "The Glass Box learning kit: ten decks of cards, printed game sheets and a participant handout" },
     imageCaption: "The Glass Box learning kit: participants play through how language models work.",
@@ -108,9 +103,25 @@ export const course: Course = {
     items: ["Merchandising", "Store operations", "Marketing", "Customer experience", "Supply chain", "People teams"],
   },
 
+  problem: {
+    heading: "AI access does not automatically create **AI-enabled work.**",
+    text: "Across organisations, people are experimenting with AI. They are writing prompts, generating content and discovering new tools. But much of this activity remains individual, inconsistent and disconnected from how work actually gets done.",
+    listIntro: "The bigger opportunity is to help people:",
+    points: [
+      "Understand what AI can and cannot do",
+      "Apply it to meaningful business tasks",
+      "Redesign workflows around AI and human judgement",
+      "Rehearse decisions in realistic situations",
+      "Identify where AI can create organisational value",
+    ],
+    closing: "That is how individual experimentation becomes organisational capability.",
+  },
+
   experiences: {
-    heading: "The **experiences**",
-    subheading: "Four ways to move your teams from talking about AI to working differently with it.", // TODO: confirm or remove
+    heading: "Building Human Capability for an **AI-First Future**",
+    subheading:
+      "Four experiential offerings that help organisations move from understanding AI to redesigning work, practising Human × AI decisions and prioritising business opportunities.",
+    pathway: ["Understand", "Redesign", "Rehearse", "Prioritise"],
     outcomeLabel: "Outcome",
     expandLabel: "Details",
     items: [
@@ -254,72 +265,33 @@ export const course: Course = {
     ],
   },
 
-  // TODO: replace
   audience: {
-    heading: "Who these experiences are **for**",
-    subheading: "Built for the retail teams who own the work, whatever their title.",
-    personas: [
-      {
-        icon: "users",
-        title: "First-time managers",
-        description: "You've just stepped into leading a team and want to use AI to work smarter from day one.",
-        outcome: "Confidence using AI for everyday management",
-      },
-      {
-        icon: "briefcase",
-        title: "Senior leaders & CXOs",
-        description: "You need to make sharp calls about where AI fits in your function, without drowning in hype.",
-        outcome: "A clear view of what AI can and can't do",
-      },
-      {
-        icon: "graduationCap",
-        title: "HR & L&D leaders",
-        description: "You're responsible for helping people across the organisation adopt AI well.",
-        outcome: "Practical ways to guide AI adoption",
-      },
-      {
-        icon: "rocket",
-        title: "Founders & business owners",
-        description: "You wear many hats and want AI to take real work off your plate, safely.",
-        outcome: "Workflows that save you hours every week",
-      },
-    ],
-    notForYouTitle: "It's probably not for you if…",
-    notForYou: [
-      "You're looking for a coding or data-science course",
-      "You want a self-paced video library to watch alone",
-      "You can't join the live sessions",
+    heading: "Is your organisation ready for **the next step?**",
+    intro: "These experiences are relevant if:",
+    conditions: [
+      "Your people have access to AI, but usage is inconsistent",
+      "Teams are experimenting without redesigning the underlying work",
+      "Leaders see possibilities but are unsure where to focus",
+      "You want productivity gains without weakening accountability",
+      "You need people to practise AI decisions in realistic business situations",
+      "You want a shared language for Human × AI collaboration",
     ],
   },
 
-  // TODO: replace
   outcomes: {
-    heading: "What teams take **back to work**",
-    subheading: "Practical habits people rehearse in the room and use the next Monday.",
+    heading: "What becomes **possible**",
+    subheading: "",
     items: [
+      { title: "More meaningful AI adoption", description: "AI becomes connected to business tasks rather than isolated experimentation." },
+      { title: "Better everyday workflows", description: "Teams identify where AI can reduce effort, accelerate cycles or improve quality." },
+      { title: "Stronger human judgement", description: "People learn when to use AI, when to challenge it and when not to use it." },
       {
-        title: "Make better decisions with AI",
-        description: "Use AI to frame problems, test options and challenge your own thinking — without handing over your judgement.",
+        title: "Clearer organisational priorities",
+        description: "Leaders separate interesting AI ideas from opportunities capable of creating meaningful value.",
       },
       {
-        title: "Write prompts that actually work",
-        description: "Get useful first drafts of emails, plans, reports and presentations in minutes instead of hours.",
-      },
-      {
-        title: "Lead your team through AI adoption",
-        description: "Run honest conversations about AI, handle resistance and set clear norms for how your team uses it.",
-      },
-      {
-        title: "Spot risks before they bite",
-        description: "Recognise hallucinations, bias, and data-privacy pitfalls, and know when not to use AI.",
-      },
-      {
-        title: "Redesign one real workflow",
-        description: "Leave with one process from your own work rebuilt with AI, tested with your peers.",
-      },
-      {
-        title: "Build a 90-day AI plan",
-        description: "A practical, personal roadmap for bringing AI into how you and your team work.",
+        title: "Safer experimentation",
+        description: "Verification, accountability, confidentiality and escalation are designed into the way AI is used.",
       },
     ],
   },
@@ -377,22 +349,16 @@ export const course: Course = {
     syllabusCta: "Get the syllabus on WhatsApp",
   },
 
-  // TODO: replace
   howItWorks: {
-    heading: "Learn it. Rehearse it. **Use it on Monday.**",
-    subheading: "The same approach Gentle Bamboo uses with leadership teams: play, reflect, share.",
+    heading: "People do not become AI-ready by **watching more content.**",
+    subheading: "They become ready by experimenting, making decisions, seeing consequences and reflecting on what should change at work.",
     steps: [
-      { title: "Learn", description: "Short, practical live sessions — no slides marathons, no jargon." },
-      { title: "Rehearse", description: "Games and simulations where you use AI on realistic leadership scenarios." },
-      { title: "Reflect", description: "Facilitated debriefs with peers on what worked and what didn't." },
-      { title: "Apply", description: "A weekly challenge you try at work, then bring back to discuss." },
+      { title: "Experience", description: "Participants encounter AI through games, simulations and real work." },
+      { title: "Examine", description: "They question assumptions, outputs, risks and limitations." },
+      { title: "Redesign", description: "They rework tasks, workflows and decisions around Human × AI collaboration." },
+      { title: "Apply", description: "They leave with practical behaviours, redesigned work or organisational priorities." },
     ],
-    details: [
-      { label: "Live sessions", value: "[2 × 90 min / week]" },
-      { label: "Time needed", value: "[~4 hrs / week]" },
-      { label: "Recordings", value: "[Yes, for 6 months]" },
-      { label: "Certificate", value: "[On completion]" },
-    ],
+    closing: "Learn it. Test it. Question it. Put it to work.",
   },
 
   // TODO: add photos to /public/images and set `src`
@@ -419,20 +385,28 @@ export const course: Course = {
     ],
     people: [
       {
-        name: "[Facilitator name]",
-        role: "[Role, Gentle Bamboo]",
-        bio: "[Two or three lines about their experience with leadership development and AI.]",
-        credentials: ["[Credential or past company]", "[Credential or certification]"],
+        name: "Namitha",
+        role: "[Role, Gentle Bamboo Solutions]",
+        bio: "[Two or three lines on Namitha's background in experiential learning, simulations and AI.]",
+        credentials: ["[Credential or past organisation]", "[Credential or certification]"],
         linkedin: "",
-        photo: { src: "", alt: "[Facilitator name]" },
+        photo: { src: "", alt: "Namitha" },
       },
       {
-        name: "[Facilitator name]",
-        role: "[Role, Gentle Bamboo]",
-        bio: "[Two or three lines about their experience with leadership development and AI.]",
-        credentials: ["[Credential or past company]", "[Credential or certification]"],
+        name: "Abhilash",
+        role: "[Role, Gentle Bamboo Solutions]",
+        bio: "[Two or three lines on Abhilash's background in experiential learning, simulations and AI.]",
+        credentials: ["[Credential or past organisation]", "[Credential or certification]"],
         linkedin: "",
-        photo: { src: "", alt: "[Facilitator name]" },
+        photo: { src: "", alt: "Abhilash" },
+      },
+      {
+        name: "Rakshit",
+        role: "[Role, Gentle Bamboo Solutions]",
+        bio: "[Two or three lines on Rakshit's background in experiential learning, simulations and AI.]",
+        credentials: ["[Credential or past organisation]", "[Credential or certification]"],
+        linkedin: "",
+        photo: { src: "", alt: "Rakshit" },
       },
     ],
   },
@@ -535,10 +509,9 @@ export const course: Course = {
   },
 
   pilot: {
-    eyebrow: "Start a conversation",
-    heading: "Where could AI make the biggest difference in **your business?**",
-    text: "Tell us where work is getting stuck. We will help you choose a focused first experience and agree on what it should deliver.",
-    cta: "Discuss an AI at Work pilot",
+    eyebrow: "How an engagement starts",
+    heading: "What happens after **you get in touch**",
+    text: "A short path from first conversation to a decision about what comes next.",
     steps: [
       { title: "First call", description: "Discuss the team, its current AI access and the business problem worth working on." },
       { title: "Scope", description: "Agree on participants, format, approved tools, outcomes and commercial terms." },
@@ -550,8 +523,9 @@ export const course: Course = {
 
   about: {
     eyebrow: "Who we are",
-    heading: "We make difficult decisions **easier to practise.**",
-    text: "Gentle Bamboo Solutions designs game-based learning, simulations and facilitated experiences for organisations. Our participants experiment safely, notice their assumptions and bring what they learn into the work they do. That is the foundation of our AI experiences.",
+    heading: "Designed by people who understand **how adults learn and work changes.**",
+    text: "Gentle Bamboo Solutions designs game-based learning experiences, business simulations and facilitated interventions for organisations. We create spaces where people can experiment safely, notice their assumptions and practise difficult decisions before making them at work.",
+    closing: "Built on years of designing experiential learning and business simulations. Now applied to the decisions and behaviours an AI-first workplace demands.",
   },
 
   // TODO: replace
@@ -610,11 +584,12 @@ export const course: Course = {
     stillQuestionsCta: "Ask us on WhatsApp",
   },
 
-  // TODO: replace
   finalCta: {
-    heading: "Ready to put AI **to work in your business?**",
-    text: "Tell us where work is getting stuck. We will suggest a focused first experience and what it should deliver.",
-    cta: "Chat with us on WhatsApp",
+    heading: "Where could AI make the biggest difference in **your business?**",
+    text: "Tell us where work is getting stuck, where your people are already experimenting and what your organisation needs to achieve. We will help you identify the most useful place to begin.",
+    cta: "Explore Your Path to AI Readiness",
+    secondaryCta: "Talk to Gentle Bamboo",
+    note: "Start with one team, one function or one business challenge.",
   },
 
   footer: {

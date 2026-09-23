@@ -10,6 +10,7 @@ export type ReviewStatus = {
 /** Which content each section shows. The pricing card also displays the cohort dates and seats. */
 const sectionContent: Record<SectionKey, unknown> = {
   audienceStrip: course.audienceStrip,
+  problem: course.problem,
   experiences: course.experiences,
   video: course.video,
   logos: course.logos,
@@ -30,7 +31,9 @@ const sectionContent: Record<SectionKey, unknown> = {
   finalCta: course.finalCta,
 };
 
-const PLACEHOLDER = /\[[^\]\n]+\]/;
+// [bracketed text] marks a placeholder, but not when it sits inside a word,
+// so brand wordmarks like "Hum[AI]n" don't count as missing content.
+const PLACEHOLDER = /(^|[^\p{L}])\[[^\]\n]+\](?!\p{L})/u;
 
 type Counts = { placeholders: number; photos: number; videos: number };
 

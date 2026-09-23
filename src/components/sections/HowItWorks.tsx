@@ -5,7 +5,7 @@ export function HowItWorks() {
   const { howItWorks } = course;
 
   return (
-    <section aria-labelledby="how-heading" className="bg-gb-purple py-16 sm:py-24">
+    <section id="how-we-work" aria-labelledby="how-heading" className="bg-gb-purple py-16 sm:py-24">
       <Container>
         <SectionHeading id="how-heading" title={howItWorks.heading} subtitle={howItWorks.subheading} tone="light" />
 
@@ -24,14 +24,9 @@ export function HowItWorks() {
           ))}
         </ol>
 
-        <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-white/15 ring-1 ring-white/15 lg:grid-cols-4">
-          {howItWorks.details.map((detail) => (
-            <div key={detail.label} className="bg-gb-purple p-5 sm:p-6">
-              <dt className="text-xs font-bold tracking-wider text-gb-lilac uppercase">{detail.label}</dt>
-              <dd className="mt-1 font-heading text-lg font-bold text-white">{detail.value}</dd>
-            </div>
-          ))}
-        </dl>
+        {howItWorks.closing && (
+          <p className="mt-14 text-center font-heading text-2xl text-balance text-gb-yellow sm:text-3xl">{howItWorks.closing}</p>
+        )}
       </Container>
     </section>
   );
