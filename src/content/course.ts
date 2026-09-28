@@ -89,7 +89,7 @@ export const course: Course = {
     eyebrow: "Human capability for an AI-first future",
     headline: "AI is changing what your people can do. **Is it changing how your business works?**",
     lead: "Gentle Bamboo Solutions helps organisations build the human capability needed for an AI-first future — turning individual experimentation into better workflows, decisions and business outcomes without outsourcing human judgement.",
-    primaryCta: "Build Your Hum[AI]n Workforce",
+    primaryCta: "Build Your AI-Ready Workforce",
     secondaryCta: "Explore the Four Experiences",
     ctaNote: "", // optional line under the buttons
     image: { src: "/images/glass-box.jpeg", alt: "The Glass Box learning kit: ten decks of cards, printed game sheets and a participant handout" },
@@ -121,7 +121,7 @@ export const course: Course = {
     heading: "Building Human Capability for an **AI-First Future**",
     subheading:
       "Four experiential offerings that help organisations move from understanding AI to redesigning work, practising Human × AI decisions and prioritising business opportunities.",
-    pathway: ["Understand", "Redesign", "Rehearse", "Prioritise"],
+    pathway: ["Understand", "Rehearse", "Redesign", "Prioritise"],
     outcomeLabel: "Outcome",
     expandLabel: "Details",
     items: [
@@ -146,6 +146,35 @@ export const course: Course = {
             type: "text",
             label: "Takeaway",
             body: "Practical prompting and verification habits, plus one suitable task to try at work.",
+          },
+        ],
+      },
+      {
+        number: "03",
+        duration: "Role-based simulations",
+        title: "AI Decision Arena",
+        summary: "Practise AI decisions in a realistic retail situation.",
+        outcome: "Clearer choices about what to delegate, augment or keep human.",
+        blocks: [
+          {
+            type: "text",
+            label: "The AI Store Manager",
+            body: "Participants face a simulated retail week with AI available. The week brings staff absenteeism, customer complaints, sales reports, inventory issues, a competitor promotion and a regional manager request.",
+          },
+          {
+            type: "quote",
+            label: "The central question",
+            body: "What should I delegate to AI, what should I augment with AI, and what should remain a human decision?",
+          },
+          {
+            type: "chips",
+            label: "Role-based versions",
+            items: ["Merchandising", "Store Operations", "Marketing", "HR", "L&D", "Customer Experience", "Supply Chain", "Finance"],
+          },
+          {
+            type: "text",
+            label: "Takeaway",
+            body: "Participants see where AI helps, where it lacks context and where a person owns the consequence.",
           },
         ],
       },
@@ -181,38 +210,9 @@ export const course: Course = {
         ],
       },
       {
-        number: "03",
-        duration: "Role-based simulations",
-        title: "Retail AI",
-        summary: "Practise AI decisions in a realistic retail situation.",
-        outcome: "Clearer choices about what to delegate, augment or keep human.",
-        blocks: [
-          {
-            type: "text",
-            label: "The AI Store Manager",
-            body: "Participants face a simulated retail week with AI available. The week brings staff absenteeism, customer complaints, sales reports, inventory issues, a competitor promotion and a regional manager request.",
-          },
-          {
-            type: "quote",
-            label: "The central question",
-            body: "What should I delegate to AI, what should I augment with AI, and what should remain a human decision?",
-          },
-          {
-            type: "chips",
-            label: "Role-based versions",
-            items: ["Merchandising", "Store Operations", "Marketing", "HR", "L&D", "Customer Experience", "Supply Chain", "Finance"],
-          },
-          {
-            type: "text",
-            label: "Takeaway",
-            body: "Participants see where AI helps, where it lacks context and where a person owns the consequence.",
-          },
-        ],
-      },
-      {
         number: "04",
         duration: "Executive teams",
-        title: "AI Leadership Lab",
+        title: "AI Leadership Studio",
         summary: "Decide where AI could create value across the business.",
         outcome: "An AI Opportunity Blueprint with priorities, owners and next steps.",
         blocks: [
@@ -523,7 +523,7 @@ export const course: Course = {
 
   about: {
     eyebrow: "Who we are",
-    heading: "Designed by people who understand **how adults learn and work changes.**",
+    heading: "Designed by people who understand **how adults learn - and how work changes.**",
     text: "Gentle Bamboo Solutions designs game-based learning experiences, business simulations and facilitated interventions for organisations. We create spaces where people can experiment safely, notice their assumptions and practise difficult decisions before making them at work.",
     closing: "Built on years of designing experiential learning and business simulations. Now applied to the decisions and behaviours an AI-first workplace demands.",
   },
